@@ -23,6 +23,12 @@ figure { margin: 0 0 28px; }
 img { display: block; width: 100%; height: auto; border-radius: 5px; }
 figcaption { padding-top: 8px; }
 footer { padding: 0 24px 24px; }
+.work-gallery { display:flex; flex-wrap:wrap; gap:24px; }
+.work-gallery figure { width:150px; margin:0; }
+.work-gallery img { width:150px; height:150px; object-fit:cover; }
+.work-gallery a { display:block; }
+.work-gallery a:hover img { outline:3px solid #174f87; }
+.work-gallery figcaption { font-size:.95rem; }
 </style>
 </head>
 <body>
@@ -55,27 +61,12 @@ footer { padding: 0 24px 24px; }
 </section>
 <section id="work">
 <h2>Work Samples</h2>
-<p><strong>Featured work:</strong> These five thumbnails represent videos from my YouTube channel.</p>
-<figure>
-<img src="images/basketball.png" alt="Thumbnail for my real life basketball video." width="1280" height="720">
-<figcaption><strong>Basketball Video</strong> — Thumbnail for my real life basketball video.</figcaption>
-</figure>
-<figure>
-<img src="images/prank.png" alt="Thumbnail for my food prank video." width="1280" height="720">
-<figcaption><strong>Prank Video</strong> — Thumbnail for my food prank video.</figcaption>
-</figure>
-<figure>
-<img src="images/fitness.png" alt="Thumbnail for a fitness challenge video." width="1280" height="720">
-<figcaption><strong>Fitness Video</strong> — Thumbnail for a fitness challenge video.</figcaption>
-</figure>
-<figure>
-<img src="images/slamball.png" alt="Thumbnail featuring a basketball scene and a comic character." width="1280" height="720">
-<figcaption><strong>Slam Ball Video</strong> — Thumbnail featuring a basketball scene and a comic character.</figcaption>
-</figure>
-<figure>
-<img src="images/creators.png" alt="Thumbnail combining creator portraits and platform branding." width="1280" height="720">
-<figcaption><strong>Creator Video</strong> — Thumbnail combining creator portraits and platform branding.</figcaption>
-</figure>
+<p>Select a thumbnail to view the full image on its own page.</p>
+<div class="work-gallery"><figure><a href="work/basketball.html"><img src="images/basketball-thumb.jpg" width="150" height="150" alt="View larger basketball video thumbnail"></a><figcaption>Basketball Video</figcaption></figure>
+<figure><a href="work/prank.html"><img src="images/prank-thumb.jpg" width="150" height="150" alt="View larger prank video thumbnail"></a><figcaption>Prank Video</figcaption></figure>
+<figure><a href="work/fitness.html"><img src="images/fitness-thumb.jpg" width="150" height="150" alt="View larger fitness video thumbnail"></a><figcaption>Fitness Video</figcaption></figure>
+<figure><a href="work/slamball.html"><img src="images/slamball-thumb.jpg" width="150" height="150" alt="View larger slam ball video thumbnail"></a><figcaption>Slam Ball Video</figcaption></figure>
+<figure><a href="work/creators.html"><img src="images/creators-thumb.jpg" width="150" height="150" alt="View larger creator video thumbnail"></a><figcaption>Creator Video</figcaption></figure></div>
 </section>
 </main>
 <footer><p>Bryce Butterfield | Web Design Portfolio</p></footer>
